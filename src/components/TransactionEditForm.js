@@ -20,9 +20,6 @@ function TransactionEditForm() {
       setTransaction({ ...transaction, [event.target.id]: event.target.value });
     };
   
-    // const handleCheckboxChange = () => {
-    //   setTransaction({ ...transaction, amount: !transaction.amount});
-    // };
   
     useEffect(() => {
       axios.get(`${process.env.REACT_APP_API_URL}/transactions/${index}`)
@@ -31,7 +28,7 @@ function TransactionEditForm() {
         }).catch((err)=>{
           navigate("/not-found");
         })
-    }, []);
+    }, [index]);
   
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -45,9 +42,10 @@ function TransactionEditForm() {
     return (
       <div className="Edit">
         <form onSubmit={handleSubmit}>
-        <label htmlFor="transactionName">Transaction Date: </label>
+        <label htmlFor="date">Transaction Date: </label>
             <input
-            id="transactionName"
+            name="date"
+            id="date"
             value={transaction.date}
             type="text"
             onChange={handleTextChange}
@@ -66,16 +64,16 @@ function TransactionEditForm() {
             <input
             id="amount"
             value={transaction.amount}
-            type="number"
+            type="text"
             onChange={handleTextChange}
-            placeholder="amount"
+            placeholder="Amount"
             />
             <label htmlFor="from">From:</label>
-            <textarea
+            <input
             id="from"
             type="text"
             value={transaction.from}
-            placeholder="From"
+            placeholder = "From"
             onChange={handleTextChange}
             />
             <label htmlFor="category">Category:</label>
@@ -84,7 +82,7 @@ function TransactionEditForm() {
             value={transaction.category}
             type="text"
             onChange={handleTextChange}
-            placeholder="category"
+            placeholder="Category"
             />
             <br />
           <input type="submit" />

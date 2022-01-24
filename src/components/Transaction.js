@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function Transaction({transaction, index}){
 return(
-    <tr>
+    <tr className="transaction">
         <td>
-        {   transaction.date}
+        {transaction.date}
         </td>
         <td>
             <Link to={`/transactions/${index}`}>
