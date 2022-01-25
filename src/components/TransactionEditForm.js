@@ -51,7 +51,7 @@ function TransactionEditForm() {
             onChange={handleTextChange}
             placeholder="Date"
             />
-           <label htmlFor="name"> Name:</label>
+           <label htmlFor="name"> Name: </label>
             <input
             id="name"
             type="text"
@@ -60,7 +60,7 @@ function TransactionEditForm() {
             placeholder="Name"
             onChange={handleTextChange}
             />
-            <label htmlFor="amount">Amount:</label>
+            <label htmlFor="amount">Amount: </label>
             <input
             id="amount"
             value={transaction.amount}
@@ -68,7 +68,7 @@ function TransactionEditForm() {
             onChange={handleTextChange}
             placeholder="Amount"
             />
-            <label htmlFor="from">From:</label>
+            <label htmlFor="from">From: </label>
             <input
             id="from"
             type="text"
@@ -76,7 +76,7 @@ function TransactionEditForm() {
             placeholder = "From"
             onChange={handleTextChange}
             />
-            <label htmlFor="category">Category:</label>
+            <label htmlFor="category">Category: </label>
             <input
             id="category"
             value={transaction.category}

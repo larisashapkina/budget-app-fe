@@ -8,10 +8,11 @@ function Index(){
        setTotalAmount(total)
    }
 
+   
     return(
-        <div className="Index">
-            <h2>Bank Account Total: ${totalAmount} </h2>
-            <Transactions getTotalAmount={getTotalAmount}/> 
+        <div className="Index"> 
+            <h2 className={totalAmount> 1000? "green": totalAmount > 0? "blue": "red"}>Bank Account Total: ${totalAmount} </h2>
+            <Transactions getTotalAmount={getTotalAmount}/>
         </div>
     )
 }
