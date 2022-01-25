@@ -8,4 +8,4 @@ https://github.com/larisashapkina/budget-app-fe
 https://ls-backend-budget.herokuapp.com/
 
 ## Deployed Frontend Link
-https://gracious-jones-d4e419.netlify.app/
+https://agitated-pare-1266e8.netlify.app/
