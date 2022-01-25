@@ -1,8 +1,8 @@
 ## Backend GitHub Link
-https://github.com/samshapland22/budget-app-project-be
+https://github.com/larisashapkina/budget-app-be
 
 ## Frontend GitHub Link
-https://github.com/samshapland22/budget-app-fe/edit/main/README.md
+https://github.com/larisashapkina/budget-app-fe
 
 ## Deployed Backend Link
 https://ls-backend-budget.herokuapp.com/
